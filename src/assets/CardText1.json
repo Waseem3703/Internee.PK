@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+     "title": "Tech Instructor or Content Creator?",
+    "description": "Transform theoretical knowledge into practical expertise through our comprehensive task portal. Build, learn, and grow with industry-standard projects from our virtual internships on internee.pk.",
+    "btext": "Button title here",
+    "bClass": "text-lg",
+    "CardTitle": "Upload Tutorials & Exercises",
+    "CardDescription": "Use internee.pk to share tutorials, exercises, and projects. Help others learn while you grow with virtual internships that reward your skills.",
+    "tags": [],
+    "icon": "FiUpload",
+    "iconClass": "text-orange-500 bg-orange-100 dark:bg-orange-900",
+    "iconPosition": "above"
+  },
+  {
+    "id": 2,
+    "title": "Build Your Instructor Profile",
+    "description": "Become a trusted voice on internee.pk. Our virtual internship ecosystem helps you build your personal brand in the online learning space.",
+    "btext": "Button title here",
+    "bClass": "text-lg",
+    "CardTitle": "Build Your Instructor Profile",
+    "CardDescription": "Become a trusted voice on internee.pk. Our virtual internship ecosystem helps you build your personal brand in the online learning space.",
+    "tags": [],
+    "icon": "FiUserCheck",
+    "iconClass": "text-blue-500 bg-blue-100 dark:bg-blue-900",
+    "iconPosition": "above"
+  },
+  {
+    "id": 3,
+    "title": "Earn from Your Expertise",
+    "description": "Internee.pk offers virtual internships in Pakistan where tech creators and instructors can earn passive income by sharing their knowledge.",
+    "btext": "Button title here",
+    "bClass": "text-lg",
+    "CardTitle": "Earn from Your Expertise",
+    "CardDescription": "Internee.pk offers virtual internships in Pakistan where tech creators and instructors can earn passive income by sharing their knowledge.",
+    "tags": [],
+    "icon": "FiDollarSign",
+    "iconClass": "text-green-500 bg-green-100 dark:bg-green-900",
+    "iconPosition": "inline"
+  },
+  {
+    "id": 4,
+    "title": "Fair Revenue Sharing",
+    "description": "We keep it transparent. Join internee.pk and benefit from a fair model that pays you well — all while gaining experience in virtual internships.",
+    "btext": "Button title here",
+    "bClass": "text-lg",
+    "CardTitle": "Fair Revenue Sharing",
+    "CardDescription": "We keep it transparent. Join internee.pk and benefit from a fair model that pays you well — all while gaining experience in virtual internships.",
+    "tags": [],
+    "icon": "FiPieChart",
+    "iconClass": "text-purple-500 bg-purple-100 dark:bg-purple-900",
+    "iconPosition": "inline"
+  }
+]

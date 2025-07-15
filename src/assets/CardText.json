@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Hands-on Industry Projects with internee.pk",
+    "description": "Gain practical experience through real-world projects that simulate actual industry scenarios. Each task is carefully designed to enhance your professional portfolio through our virtual internships.",
+    "tags": ["Project-based learning", "Industry-standard practices", "Portfolio building"],
+    "icon": "DiCoffeescript",
+    "iconClass": "text-orange-500 bg-orange-100 dark:bg-orange-900",
+    "iconPosition": "above"
+  },
+  {
+    "id": 2,
+    "title": "Skill Verification System by internee.pk",
+    "description": "Each completed task adds to your verified skills portfolio. Showcase your capabilities with confidence through our virtual internships and comprehensive tracking system.",
+    "tags": ["Skill verification", "Progress Tracking", "Achievement badges"],
+    "icon": "DiCodeBadge",
+    "iconClass": "text-blue-500 bg-blue-100 dark:bg-blue-900",
+    "iconPosition": "above"
+  },
+  {
+    "id": 3,
+    "title": "SDLC Implementation via internee.pk",
+    "description": "Experience the complete Software Development Life Cycle through structured tasks and milestones, part of our virtual internship offerings.",
+    "tags": [],
+    "icon": "DiCssdeck",
+    "iconClass": "text-green-500 bg-green-100 dark:bg-green-900",
+    "iconPosition": "inline"
+  },
+  {
+    "id": 4,
+    "title": "Guided Learning Path at internee.pk",
+    "description": "Follow a structured learning path designed for both beginners and advanced learners as part of our virtual internship curriculum.",
+    "tags": [],
+    "icon": "DiGhostSmall",
+    "iconClass": "text-purple-500 bg-purple-100 dark:bg-purple-900",
+    "iconPosition": "inline"
+  }
+]
