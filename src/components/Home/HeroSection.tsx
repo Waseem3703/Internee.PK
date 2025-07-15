@@ -1,4 +1,4 @@
-import image_1 from "/src/assets/HomeImage/Internee-home-1.webp";
+import image_1 from "/HomeImage/Internee-home-1.webp";
 import Typewriter from "typewriter-effect";
 import { MdOutlineArrowOutward } from "react-icons/md";
 

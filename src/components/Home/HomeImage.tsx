@@ -1,10 +1,10 @@
 const imageList = [
-  "/src/assets/HomeImage/image1.png",
-  "/src/assets/HomeImage/image2.png",
-  "/src/assets/HomeImage/image3.png",
-  "/src/assets/HomeImage/image4.png",
-  "/src/assets/HomeImage/image5.png",
-  "/src/assets/HomeImage/image6.png",
+  "/HomeImage/image1.png",
+  "/HomeImage/image2.png",
+  "/HomeImage/image3.png",
+  "/HomeImage/image4.png",
+  "/HomeImage/image5.png",
+  "/HomeImage/image6.png",
 ];
 
 function HomeImage() {

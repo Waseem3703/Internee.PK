@@ -6,12 +6,12 @@ import TextCard1 from "../components/Home/TextCard1";
 
 
 const CardData = [
-  { imageSrc: "/src/assets/HomeImage/card1.webp", title: "Graphic Design" },
-  { imageSrc: "/src/assets/HomeImage/card2.webp", title: "Chatbot Development" },
-  { imageSrc: "/src/assets/HomeImage/card3.webp", title: "Other Internships" },
-  { imageSrc: "/src/assets/HomeImage/card4.webp", title: "Frontend Internship" },
-  { imageSrc: "/src/assets/HomeImage/card5.webp", title: "App Development" },
-  { imageSrc: "/src/assets/HomeImage/card6.webp", title: "Backend Development" },
+  { imageSrc: "/HomeImage/card1.webp", title: "Graphic Design" },
+  { imageSrc: "/HomeImage/card2.webp", title: "Chatbot Development" },
+  { imageSrc: "/HomeImage/card3.webp", title: "Other Internships" },
+  { imageSrc: "/HomeImage/card4.webp", title: "Frontend Internship" },
+  { imageSrc: "/HomeImage/card5.webp", title: "App Development" },
+  { imageSrc: "/HomeImage/card6.webp", title: "Backend Development" },
 ];
 
 function Home() {
