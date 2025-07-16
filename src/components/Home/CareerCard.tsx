@@ -2,6 +2,17 @@ import CardText from "../../assets/CareerCard.json";
 import * as DiIcons from "react-icons/di";
 import { CiCircleCheck } from "react-icons/ci";
 import { HiOutlineAcademicCap } from "react-icons/hi2";
+import { FaRegFileAlt } from "react-icons/fa";
+import { FiChevronRight, FiMessageSquare } from "react-icons/fi";
+import { MdOutlineSignalCellularAlt } from "react-icons/md";
+import { IoMdBook } from "react-icons/io";
+
+const iconMap = {
+  FaRegFileAlt,
+  FiMessageSquare,
+  MdOutlineSignalCellularAlt,
+  IoMdBook,
+};
 
 const BtnData = [
   {
@@ -21,6 +32,39 @@ const BtnData = [
     txt: "Industry Sectors",
   },
 ];
+const coltxt = [
+  {
+    txt: "Phase 1: Foundation",
+    class: "w-[90%]",
+  },
+  {
+    txt: "Phase 2: Practical Skills",
+    class: "w-[85%]",
+  },
+  {
+    txt: "Phase 3: Industry Project",
+    class: "w-[95%]",
+  },
+];
+
+const col2txt = [
+  {
+    txt: "Resume Templates",
+    icon: "FaRegFileAlt",
+  },
+  {
+    txt: "Mock Interviews",
+    icon: "FiMessageSquare",
+  },
+  {
+    txt: "Skill Analysis",
+    icon: "MdOutlineSignalCellularAlt",
+  },
+  {
+    txt: "Learning Paths",
+    icon: "IoMdBook",
+  },
+];
 
 function HomeCard() {
   const startIndex = 0;
@@ -28,12 +72,15 @@ function HomeCard() {
   const displayedCard = CardText.slice(startIndex, startIndex + limit);
 
   return (
-    <div className="bg-gray-200 dark:bg-black dark:text-white min-h-screen py-16 px-6 md:px-12 font-urbanist transition-colors duration-300">
+    <div
+      className="bg-gray-200 dark:bg-black dark:text-white min-h-screen py-16 px-6 md:px-12 font-urbanist
+     transition-colors duration-300"
+    >
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12 mt-12">
           <div className="inline-flex items-center bg-[#43A724]/10 text-[#43A724] px-4 py-2 rounded-full mb-6">
-            <HiOutlineAcademicCap className="text-2xl"/>
+            <HiOutlineAcademicCap className="text-2xl" />
             Professional Development
           </div>
           <h1 className="text-3xl md:text-[46px] mt-4 font-medium text-[#171717] dark:text-white">
@@ -110,6 +157,74 @@ function HomeCard() {
               </div>
             );
           })}
+        </div>
+      </div>
+      <div className="grid md:grid-cols-2 gap-8 mb-16  py-20 px-6">
+        <div className="bg-[#f9f9f9] dark:bg-[#1e1e1e] rounded-xl p-8">
+          <h3 className="text-xl font-bold text-black dark:text-white mb-6">
+            Your Learning Journey
+          </h3>
+          <div className="space-y-6">
+            {coltxt.map((item, index) => (
+              <div
+                key={index}
+                className="bg-white text-black dark:text-white dark:bg-[#2c2c2c] p-4 rounded-lg"
+              >
+                <h4 className="font-semibold mb-2">{item.txt}</h4>
+                <div className="h-2 bg-gray-200 dark:bg-gray-700 rounded-full">
+                  <div
+                    className={`h-2 bg-[#43A724] rounded-full ${item.class}`}
+                  ></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="bg-[#f9f9f9] dark:bg-[#1e1e1e] rounded-xl p-8 ">
+          <h3 className="text-xl font-bold text-black dark:text-white mb-6">
+            Career Resources
+          </h3>
+          <div className="grid grid-cols-2 gap-4">
+            {col2txt.map((item, index) => {
+              const Icon = iconMap[item.icon as keyof typeof iconMap];
+              return (
+                <div
+                  key={index}
+                  className="bg-white dark:bg-[#2c2c2c] text-black dark:text-white p-4 rounded-lg flex items-center gap-3"
+                >
+                  {Icon && <Icon className="text-xl text-[#43A724]" />}
+                  {item.txt}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+      <div className="text-center bg-[#f1f8f4] dark:bg-[#1e1e1e] rounded-2xl p-12">
+        <h2 className="text-3xl font-bold text-black dark:text-white mb-6">
+          Begin Your Professional Journey with <strong>Internee.pk</strong>
+        </h2>
+        <p className="text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
+          Join our <strong>virtual internships</strong> program and transform
+          your career prospects with hands-on experience and expert guidance.
+        </p>
+
+        <div className="flex flex-wrap justify-center gap-4">
+          <a
+            href="/jobs/public"
+            className="bg-[#43A724] dark:bg-[#30781a] dark:hover:bg-[#1d4a10] font-urbanist text-white 
+            hover:bg-[#30781a] text-lg font-semibold px-8 py-3 rounded-2xl inline-flex items-center transition-all duration-300 shadow-md"
+          >
+            Explore Opportunities
+            <FiChevronRight className="ml-2 h-5 w-5" />
+          </a>
+          <a
+            href="/internship"
+            className="bg-white dark:bg-[#2c2c2c] font-urbanist text-[#43A724] hover:bg-gray-50 dark:hover:bg-[#252525] text-lg font-semibold px-8 py-3 rounded-2xl inline-flex items-center transition-all duration-300 shadow-md"
+          >
+            View Programs
+            <FiChevronRight className="ml-2 h-5 w-5" />
+          </a>
         </div>
       </div>
     </div>
