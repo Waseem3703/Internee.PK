@@ -3,6 +3,7 @@ import HeroSection from "../components/Home/HeroSection";
 import HomeCard from "../components/Home/HomeCard";
 import TextCard from "../components/Home/TextCard";
 import TextCard1 from "../components/Home/TextCard1";
+import CareerCard from "../components/Home/CareerCard";
 
 
 const CardData = [
@@ -22,6 +23,7 @@ function Home() {
       <HomeCard cards= {CardData}/>
       <TextCard/>
       <TextCard1/>
+      <CareerCard/>
     </>
   );
 }

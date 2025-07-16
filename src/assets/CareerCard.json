@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Targeted Learning",
+    "description": "Industry-specific virtual internships designed to build practical skills and experience.",
+    "tags": ["Web Development", "Digital Marketing", "UI/UX Design", "Content Writing", "Data Analytics", "Business Development"],
+    "icon": "DiCoffeescript",
+    "iconClass": "text-orange-500 bg-orange-100 dark:bg-orange-900",
+    "iconPosition": "above"
+  },
+  {
+    "id": 2,
+    "title": "Mentorship Program",
+    "description": "Learn directly from industry experts at Infernee.pk",
+    "tags": ["One-on-One Guidance", "Weekly Sessions", "Project Reviews", "Career Planning", "Industry Connect", "Networking Events"],
+    "icon": "DiCodeBadge",
+    "iconClass": "text-blue-500 bg-blue-100 dark:bg-blue-900",
+    "iconPosition": "above"
+  },
+  {
+    "id": 3,
+    "title": "Certification Track",
+    "description": "Earn recognized certifications through virtual internships",
+    "tags": ["Skill Verification", "Project Portfolio", "Performance Badges", "Industry Recognition", "Digital Certificates", "LinkedIn Integration"],
+    "icon": "DiCssdeck",
+    "iconClass": "text-green-500 bg-green-100 dark:bg-green-900",
+    "iconPosition": "above"
+  }
+]
