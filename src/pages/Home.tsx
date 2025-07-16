@@ -4,6 +4,7 @@ import HomeCard from "../components/Home/HomeCard";
 import TextCard from "../components/Home/TextCard";
 import TextCard1 from "../components/Home/TextCard1";
 import CareerCard from "../components/Home/CareerCard";
+import MockCard from "../components/Home/MockCard";
 
 
 const CardData = [
@@ -24,6 +25,7 @@ function Home() {
       <TextCard/>
       <TextCard1/>
       <CareerCard/>
+      <MockCard/>
     </>
   );
 }

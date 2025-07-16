@@ -74,7 +74,7 @@ function HomeCard() {
   return (
     <div
       className="bg-gray-200 dark:bg-black dark:text-white min-h-screen py-16 px-6 md:px-12 font-urbanist
-     transition-colors duration-300"
+     transition-colors duration-300 "
     >
       <div className="max-w-7xl mx-auto">
         {/* Header */}
@@ -212,13 +212,13 @@ function HomeCard() {
         <div className="flex flex-wrap justify-center gap-4">
           <div
             className="bg-[#43A724] dark:bg-[#30781a] dark:hover:bg-[#1d4a10] font-urbanist text-white 
-            hover:bg-[#30781a] text-lg font-semibold px-8 py-3 rounded-2xl inline-flex items-center transition-all duration-300 shadow-md"
+            hover:bg-[#30781a] text-lg font-semibold px-8 py-3 rounded-2xl inline-flex items-center transition-all duration-300 shadow-md cursor-pointer"
           >
             Explore Opportunities
             <FiChevronRight className="ml-2 h-5 w-5" />
           </div>
           <div
-            className="bg-white dark:bg-[#2c2c2c] font-urbanist text-[#43A724] hover:bg-gray-50 dark:hover:bg-[#252525] text-lg font-semibold px-8 py-3 rounded-2xl inline-flex items-center transition-all duration-300 shadow-md"
+            className="bg-white dark:bg-[#2c2c2c] font-urbanist text-[#43A724] hover:bg-gray-50 dark:hover:bg-[#252525] text-lg font-semibold px-8 py-3 rounded-2xl inline-flex items-center transition-all duration-300 shadow-md cursor-pointer"
           >
             View Programs
             <FiChevronRight className="ml-2 h-5 w-5" />
