@@ -210,21 +210,19 @@ function HomeCard() {
         </p>
 
         <div className="flex flex-wrap justify-center gap-4">
-          <a
-            href="/jobs/public"
+          <div
             className="bg-[#43A724] dark:bg-[#30781a] dark:hover:bg-[#1d4a10] font-urbanist text-white 
             hover:bg-[#30781a] text-lg font-semibold px-8 py-3 rounded-2xl inline-flex items-center transition-all duration-300 shadow-md"
           >
             Explore Opportunities
             <FiChevronRight className="ml-2 h-5 w-5" />
-          </a>
-          <a
-            href="/internship"
+          </div>
+          <div
             className="bg-white dark:bg-[#2c2c2c] font-urbanist text-[#43A724] hover:bg-gray-50 dark:hover:bg-[#252525] text-lg font-semibold px-8 py-3 rounded-2xl inline-flex items-center transition-all duration-300 shadow-md"
           >
             View Programs
             <FiChevronRight className="ml-2 h-5 w-5" />
-          </a>
+          </div>
         </div>
       </div>
     </div>
