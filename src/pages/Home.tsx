@@ -5,6 +5,10 @@ import TextCard from "../components/Home/TextCard";
 import TextCard1 from "../components/Home/TextCard1";
 import CareerCard from "../components/Home/CareerCard";
 import MockCard from "../components/Home/MockCard";
+import HowItWorkCard from "../components/Home/HowItWorkCard";
+import AICard from "../components/Home/AICard";
+import TrusCard from "../components/Home/TrustCard";
+import Footer from "../components/Home/Footer";
 
 
 const CardData = [
@@ -26,6 +30,10 @@ function Home() {
       <TextCard1/>
       <CareerCard/>
       <MockCard/>
+      <HowItWorkCard/>
+      <AICard/>
+      <TrusCard/>
+      <Footer/>
     </>
   );
 }
