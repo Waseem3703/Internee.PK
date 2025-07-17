@@ -33,7 +33,6 @@ function Home() {
       <HowItWorkCard/>
       <AICard/>
       <TrusCard/>
-      <Footer/>
     </>
   );
 }

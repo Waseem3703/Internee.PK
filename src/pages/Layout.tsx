@@ -3,6 +3,7 @@ import logo from "../assets/logo.png";
 import { FaUserCircle } from "react-icons/fa";
 import { HiMenu, HiX } from "react-icons/hi";
 import { useEffect, useState } from "react";
+import Footer from "../components/Home/Footer";
 
 function Layout() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -30,7 +31,7 @@ function Layout() {
 
   return (
     <>
-      <header className="flex justify-between items-center px-6 md:px-16 py-4 bg-white shadow-md fixed w-full z-50 top-0">
+<header className="flex justify-between items-center px-6 md:px-16 py-4 bg-white dark:bg-gray-900 shadow-md fixed w-full z-50 top-0 text-gray-800 dark:text-gray-100">
         {/* Logo */}
         <div className="flex items-center gap-4">
           <img src={logo} alt="Logo" className="h-10 w-auto" />
@@ -74,7 +75,7 @@ function Layout() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden px-6 pt-4 pb-6 bg-white shadow-lg mt-[64px] space-y-4 z-40 relative">
+<div className="md:hidden px-6 pt-4 pb-6 bg-white dark:bg-gray-900 shadow-lg mt-[64px] space-y-4 z-40 relative text-gray-800 dark:text-gray-100">
           <nav className="flex flex-col gap-3 text-gray-700 font-medium">
             <Link to="/" onClick={() => setMobileMenuOpen(false)}>
               Home
@@ -105,9 +106,11 @@ function Layout() {
           </div>
         </div>
       )}
-      <main>
-        <Outlet />
-      </main>
+ <main className="bg-white dark:bg-gray-950 min-h-screen transition-colors duration-300">
+  <Outlet />
+</main>
+      <Footer/>
+
     </>
   );
 }

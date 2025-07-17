@@ -1,12 +1,14 @@
 // tailwind.config.js
-module.exports = {
-  darkMode: 'class', // Enable dark mode via class strategy
+import { defineConfig } from 'tailwindcss'
+
+export default defineConfig({
+  darkMode: 'class', // Enable class-based dark mode
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}", // Scan all JS/JSX/TS/TSX files in src
-    "./public/index.html",        // Also scan the public index.html
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {}, // You can add custom colors/fonts later here
+    extend: {},
   },
-  plugins: [],  // Add Tailwind plugins here if needed
-}
+  plugins: [],
+})
