@@ -1,1 +1,5 @@
 @import "tailwindcss";
+/* Required for dark mode support */
+html.dark {
+  color-scheme: dark;
+}

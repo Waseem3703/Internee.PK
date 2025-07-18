@@ -63,17 +63,16 @@ export default function AICard() {
               "url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80')",
           }}
         />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-          <div className="relative z-10 max-w-3xl">
-            <div className="inline-flex items-center bg-[#43A724]/10 text-[#43A724] px-4 py-2 rounded-full mb-6">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center bg-[#43A724]/10 text-[#43A724] px-4 py-2 rounded-full mb-6 text-sm">
               <Icons.Brain className="w-5 h-5 mr-2" />
               Your AI Career Journey
             </div>
-            <h1 className="text-5xl font-extrabold text-black dark:text-white mb-6 leading-tight">
-              AI Career Coach: Your Ultimate Guide to Building a Successful AI
-              Career
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-black dark:text-white mb-6 leading-tight">
+              AI Career Coach: Your Ultimate Guide to Building a Successful AI Career
             </h1>
-            <p className="text-xl text-gray-700 dark:text-gray-300">
+            <p className="text-base sm:text-lg text-gray-700 dark:text-gray-300">
               Looking to kickstart your career in the AI industry? Our AI Career
               Coach platform offers expert guidance in resume building, cover
               letter creation, interview preparation, quizzes, and industry
@@ -84,21 +83,21 @@ export default function AICard() {
       </div>
 
       {/* Features Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-        <div className="grid lg:grid-cols-2 gap-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           {features.map((item, index) => {
             const Icon = (Icons[item.icon as keyof typeof Icons] ||
               Icons.Zap) as React.ComponentType<{ className?: string }>;
             return (
               <div
                 key={index}
-                className="bg-white dark:bg-[#1e1e1e] p-8 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-800 transform hover:scale-[1.02] transition-transform"
+                className="bg-white dark:bg-[#1e1e1e] p-6 sm:p-8 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-800 transform hover:scale-[1.02] transition-transform"
               >
-                <div className="flex items-center mb-6">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center mb-6 gap-4">
                   <div className="h-14 w-14 bg-[#f1f8f4] dark:bg-[#2c2c2c] rounded-2xl flex items-center justify-center">
                     <Icon className="text-[#43A724] w-7 h-7" />
                   </div>
-                  <h2 className="text-2xl font-bold text-black dark:text-white ml-4">
+                  <h2 className="text-xl font-bold text-black dark:text-white">
                     {item.title}
                   </h2>
                 </div>
@@ -110,16 +109,17 @@ export default function AICard() {
           })}
         </div>
 
-        <div className="mt-24 bg-[#f1f8f4] dark:bg-[#1e1e1e] rounded-3xl p-12">
+        {/* Monetization Section */}
+        <div className="mt-20 sm:mt-24 bg-[#f1f8f4] dark:bg-[#1e1e1e] rounded-3xl p-8 sm:p-12">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-flex items-center justify-center bg-[#43A724]/10 text-[#43A724] px-6 py-2 rounded-full mb-6">
+            <div className="inline-flex items-center justify-center bg-[#43A724]/10 text-[#43A724] px-4 sm:px-6 py-2 rounded-full mb-4 sm:mb-6 text-sm sm:text-base">
               <HiOutlineCurrencyDollar className="w-5 h-5 mr-2" />
               Monetize Your Expertise
             </div>
-            <h2 className="text-3xl font-bold text-black dark:text-white mb-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-black dark:text-white mb-4 sm:mb-6">
               Share Your Knowledge & Earn
             </h2>
-            <p className="text-gray-600 dark:text-gray-400 mb-12">
+            <p className="text-gray-600 dark:text-gray-400">
               Are you an AI expert? Share your knowledge through courses,
               tutorials, or content. Build your personal brand and generate
               income while helping others succeed in their AI careers.
@@ -127,24 +127,25 @@ export default function AICard() {
           </div>
         </div>
 
-        <div className="mt-24">
-          <h2 className="text-3xl font-bold text-black dark:text-white text-center mb-12">
+        {/* Why Choose Us Section */}
+        <div className="mt-20 sm:mt-24">
+          <h2 className="text-2xl sm:text-3xl font-bold text-black dark:text-white text-center mb-10 sm:mb-12">
             Why Choose AI Career Coach?
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
             {btnfeatures.map((item, index) => {
               const Icon = item.icon;
               return (
                 <div
                   key={index}
-                  className="bg-white dark:bg-[#1e1e1e] p-8 rounded-2xl text-center"
+                  className="bg-white dark:bg-[#1e1e1e] p-6 sm:p-8 rounded-2xl text-center"
                 >
                   <Icon className="text-[#43A724] w-8 h-8 mx-auto mb-4" />
-                  <h3 className="text-xl font-bold text-black dark:text-white mb-3">
+                  <h3 className="text-lg sm:text-xl font-bold text-black dark:text-white mb-2 sm:mb-3">
                     {item.title}
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-400">
+                  <p className="text-gray-600 dark:text-gray-400 text-sm sm:text-base">
                     {item.description}
                   </p>
                 </div>

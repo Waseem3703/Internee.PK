@@ -9,7 +9,6 @@ import HowItWorkCard from "../components/Home/HowItWorkCard";
 import AICard from "../components/Home/AICard";
 import TrusCard from "../components/Home/TrustCard";
 
-
 const CardData = [
   { imageSrc: "/HomeImage/card1.webp", title: "Graphic Design" },
   { imageSrc: "/HomeImage/card2.webp", title: "Chatbot Development" },
@@ -21,18 +20,19 @@ const CardData = [
 
 function Home() {
   return (
-    <>
+    <main className="bg-white dark:bg-black text-gray-900 dark:text-white transition-colors duration-300">
+      {/* All sections below will inherit dark mode + base layout */}
       <HeroSection />
       <HomeImage />
-      <HomeCard cards= {CardData}/>
-      <TextCard/>
-      <TextCard1/>
-      <CareerCard/>
-      <MockCard/>
-      <HowItWorkCard/>
-      <AICard/>
-      <TrusCard/>
-    </>
+      <HomeCard cards={CardData} />
+      <TextCard />
+      <TextCard1 />
+      <CareerCard />
+      <MockCard />
+      <HowItWorkCard />
+      <AICard />
+      <TrusCard />
+    </main>
   );
 }
 

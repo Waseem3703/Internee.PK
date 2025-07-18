@@ -1,33 +1,36 @@
-import { FiUserPlus, FiFileText, FiAward } from 'react-icons/fi';
+import { FiUserPlus, FiFileText, FiAward } from "react-icons/fi";
 
 const steps = [
   {
     id: 1,
-    title: 'Sign Up & Choose a Domain',
-    description: 'Explore a wide range of internships across various industries, tailored to match your skills.',
+    title: "Sign Up & Choose a Domain",
+    description:
+      "Explore a wide range of internships across various industries, tailored to match your skills.",
     icon: <FiUserPlus />,
-    stepBg: '#41A223',
+    stepBg: "#41A223",
   },
   {
     id: 2,
-    title: 'Fill out the Desired Form',
-    description: 'Fill out a quick application form to and secure your internship opportunity.',
+    title: "Fill out the Desired Form",
+    description:
+      "Fill out a quick application form to and secure your internship opportunity.",
     icon: <FiFileText />,
-    stepBg: '#1b1b1b',
+    stepBg: "#1b1b1b",
   },
   {
     id: 3,
-    title: 'Earn Your Certificate',
-    description: 'Complete your internship, gain valuable hands-on experience, and receive a certificate',
+    title: "Earn Your Certificate",
+    description:
+      "Complete your internship, gain valuable hands-on experience, and receive a certificate",
     icon: <FiAward />,
-    stepBg: '#1a1a1a',
+    stepBg: "#1a1a1a",
   },
 ];
 
 function HowItWorkCard() {
   return (
     <section className="bg-gray-100 dark:bg-black text-black dark:text-white px-4 sm:px-8 py-12 min-h-screen flex flex-col lg:flex-row items-center justify-around font-urbanist">
-      <div className="text-center lg:text-left max-w-sm sm:max-w-xl">
+      <div className="text-center lg:text-left max-w-sm sm:max-w-xl mb-10 lg:mb-0">
         <div className="px-4 py-1 text-sm bg-white dark:bg-gray-800 font-medium text-black dark:text-white rounded-full w-fit mx-auto lg:mx-0">
           How It Works
         </div>
@@ -38,19 +41,20 @@ function HowItWorkCard() {
         </h2>
       </div>
 
-      <div className="max-w-xl">
-        <div className="relative pl-6">
-          <div className="absolute left-16 top-0 h-full w-0.5 border-l-2 border-gray-500 border-dashed"></div>
+      <div className="w-full max-w-xl relative">
+        <div className="pl-6 sm:pl-10">
+          {/* vertical line */}
+          <div className="absolute left-9 sm:left-14 top-0 h-full w-0.5 border-l-2 border-gray-400 dark:border-gray-600 border-dashed"></div>
 
           {steps.map((step) => (
-            <div className="flex items-center mb-6" key={step.id}>
+            <div className="flex items-start sm:items-center mb-6" key={step.id}>
               <div
                 className="text-white px-4 py-2 2xl:py-3 rounded-full z-10 text-sm 2xl:text-base font-semibold min-w-20 text-center"
                 style={{ backgroundColor: step.stepBg }}
               >
                 Step {step.id}
               </div>
-              <div className="ml-6 bg-white dark:bg-[#43a72448] shadow-md rounded-xl py-6 px-6 2xl:py-8 2xl:px-10 w-full">
+              <div className="ml-4 sm:ml-6 bg-white dark:bg-[#43a72418] shadow-md rounded-xl py-6 px-5 sm:px-6 2xl:py-8 2xl:px-10 w-full">
                 <h3 className="text-lg 2xl:text-xl py-2 font-semibold flex items-center gap-2">
                   {step.icon}
                   {step.title}

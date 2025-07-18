@@ -66,7 +66,7 @@ function StudentAmbassador() {
       </div>
       <div className="relative -mt-40 md:flex hidden container mx-auto px-4 justify-end">
       <div className="w-[95%] bg-[#F3F4F6] dark:bg-[#1e1e1e] rounded-tl-xl rounded-bl-xl rounded-b-xl p-8 shadow-lg relative z-10">
-        <h2 className="text-xl font-bold mb-4">Become a Student Ambassador</h2>
+        <h2 className="text-xl font-bold mb-4 dark:text-white">Become a Student Ambassador</h2>
         <div className="flex">
           <p className="text-md text-black/80 dark:text-white/80 w-[70%]">
             Join our global community of students who are passionate about building AI-driven
@@ -88,7 +88,7 @@ function StudentAmbassador() {
             />
           </div>
           <div className="absolute left-[30%] w-[45%] bg-[#f5f5f5] dark:bg-[#121212] rounded-xl p-8 shadow-xl z-10">
-            <h2 className="text-6xl mb-4 font-semibold">Unlock Your Potential</h2>
+            <h2 className="text-6xl mb-4 font-semibold dark:text-white">Unlock Your Potential</h2>
             <p className="text-lg text-black/80 dark:text-white/80">
               Discover new opportunities and enhance your skills.
             </p>
@@ -128,7 +128,7 @@ function StudentAmbassador() {
       </div>
     </section>
      <div className="container mx-auto px-4 py-16">
-      <h2 className="text-xl font-semibold">Why you should join</h2>
+      <h2 className="text-xl font-semibold dark:text-white">Why you should join</h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-5">
         {reasons.map((item, index) => (
           <div
@@ -136,7 +136,7 @@ function StudentAmbassador() {
             className="bg-gray-50 dark:bg-[#1a1a1a] p-8 rounded-lg"
           >
             {item.icon}
-            <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
+            <h3 className="text-xl font-semibold mb-3 dark:text-white">{item.title}</h3>
             <p className="text-black/70 dark:text-white/70">
               {item.description}
             </p>
