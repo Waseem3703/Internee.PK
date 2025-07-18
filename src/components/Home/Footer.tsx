@@ -22,7 +22,9 @@ function Footer() {
                 className="flex h-10 w-full rounded-md border border-input text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 flex-1 border-none focus:ring-0 bg-transparent placeholder:text-gray-400 dark:placeholder:text-gray-500 px-6 py-2"
                 placeholder="Enter your email"
               />
-              <button className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 bg-[#41a223] hover:bg-green-600 text-white px-6 py-2 mr-2 rounded-full">
+              <button className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium 
+              ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+              focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-14 bg-[#41a223] hover:bg-green-600 text-white px-8 py-2 mr- rounded-full">
                 Subscribe
               </button>
             </div>
