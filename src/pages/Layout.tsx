@@ -31,7 +31,10 @@ function Layout() {
 
   return (
     <>
-<header className="flex justify-between items-center px-6 md:px-16 py-4 bg-white dark:bg-gray-900 shadow-md fixed w-full z-50 top-0 text-gray-800 dark:text-gray-100">
+      <header
+        className="flex justify-between items-center px-6 md:px-16 py-4
+ bg-white dark:bg-gray-900 shadow-md fixed w-full z-50 top-0 text-gray-800 dark:text-gray-100"
+      >
         {/* Logo */}
         <div className="flex items-center gap-4">
           <img src={logo} alt="Logo" className="h-10 w-auto" />
@@ -48,7 +51,7 @@ function Layout() {
         </div>
 
         {/* Nav Links (Desktop) */}
-<nav className="hidden md:flex gap-6 text-gray-700 dark:text-gray-200 font-medium items-center">
+        <nav className="hidden md:flex gap-6 text-gray-700 dark:text-gray-200 font-medium items-center">
           <Link to="/">Home</Link>
           <Link to="/internship">Internship</Link>
           <Link to="/graduate-program">Graduate Program</Link>
@@ -57,7 +60,8 @@ function Layout() {
 
         {/* Buttons (Desktop) */}
         <div className="hidden md:flex gap-3 items-center">
-          <button className="bg-[rgb(67,167,36)] text-white px-4 py-2 rounded-xl hover:bg-white hover:text-[rgb(67,167,36)] hover:border hover:border-[rgb(67,167,36)] duration-300">
+          <button className="px-4 py-2 rounded-xl border border-[rgb(67,167,36)] hover:bg-white 
+           hover:text-[rgb(67,167,36)] duration-300 bg-[rgb(67,167,36)] text-white">
             Job Portal
           </button>
           <button className="px-4 py-2 rounded-xl border border-[rgb(67,167,36)] hover:bg-[rgb(67,167,36)] hover:text-white duration-300">
@@ -75,7 +79,7 @@ function Layout() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-<div className="md:hidden px-6 pt-4 pb-6 bg-white dark:bg-gray-900 shadow-lg mt-[64px] space-y-4 z-40 relative text-gray-800 dark:text-gray-100">
+        <div className="md:hidden px-6 pt-4 pb-6 bg-white dark:bg-gray-900 shadow-lg mt-[64px] space-y-4 z-40 relative text-gray-800 dark:text-gray-100">
           <nav className="flex flex-col gap-3 text-gray-700 font-medium">
             <Link to="/" onClick={() => setMobileMenuOpen(false)}>
               Home
@@ -106,11 +110,10 @@ function Layout() {
           </div>
         </div>
       )}
- <main className="bg-white dark:bg-gray-950 min-h-screen transition-colors duration-300">
-  <Outlet />
-</main>
-      <Footer/>
-
+      <main className="bg-white dark:bg-gray-950 min-h-screen transition-colors duration-300">
+        <Outlet />
+      </main>
+      <Footer />
     </>
   );
 }
