@@ -8,7 +8,6 @@ import MockCard from "../components/Home/MockCard";
 import HowItWorkCard from "../components/Home/HowItWorkCard";
 import AICard from "../components/Home/AICard";
 import TrusCard from "../components/Home/TrustCard";
-import Footer from "../components/Home/Footer";
 
 
 const CardData = [

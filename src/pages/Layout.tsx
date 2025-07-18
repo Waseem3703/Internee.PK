@@ -50,8 +50,8 @@ function Layout() {
         {/* Nav Links (Desktop) */}
 <nav className="hidden md:flex gap-6 text-gray-700 dark:text-gray-200 font-medium items-center">
           <Link to="/">Home</Link>
-          <Link to="/Internship">Internship</Link>
-          <Link to="/Graduate-Program">Graduate Program</Link>
+          <Link to="/internship">Internship</Link>
+          <Link to="/graduate-program">Graduate Program</Link>
           <Link to="/Student-Ambassador">Student Ambassador</Link>
         </nav>
 
@@ -80,17 +80,17 @@ function Layout() {
             <Link to="/" onClick={() => setMobileMenuOpen(false)}>
               Home
             </Link>
-            <Link to="/Internship" onClick={() => setMobileMenuOpen(false)}>
+            <Link to="/internship" onClick={() => setMobileMenuOpen(false)}>
               Internship
             </Link>
             <Link
-              to="/Graduate-Program"
+              to="/graduate-program"
               onClick={() => setMobileMenuOpen(false)}
             >
               Graduate Program
             </Link>
             <Link
-              to="/Student-Ambassador"
+              to="/student-ambassador"
               onClick={() => setMobileMenuOpen(false)}
             >
               Student Ambassador
