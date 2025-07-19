@@ -6,13 +6,15 @@ This project is a complete **frontend redesign** of [Internee.pk](https://intern
 
 🌍 [Live Site](#) — [_Visit Here_](https://internee-pk-eight.vercel.app/)
 
-
 ## 📸 Screenshots
 
- [Screenshot 1](./screenshots/1.png) 
- [Screenshot 2](./screenshots/2.png)
- [Screenshot 3](./screenshots/3.png) 
- 
+![Screenshot 1](screenshots/1.png)
+
+![Screenshot 2](screenshots/2.png)
+
+![Screenshot 3](screenshots/3.png)
+
+
 ---
 
 ## 🎯 Key Features
