@@ -11,8 +11,8 @@ This project is a complete **frontend redesign** of [Internee.pk](https://intern
 
  [Screenshot 1](./screenshots/1.png) 
  [Screenshot 2](./screenshots/2.png)
- [Screenshot 3](./screenshots/3.png) |
-|
+ [Screenshot 3](./screenshots/3.png) 
+ 
 ---
 
 ## 🎯 Key Features
